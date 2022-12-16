@@ -1,0 +1,18 @@
+.ConversionButton {
+  font-weight: 600;
+  font-size: 12px;
+  padding-top: 5px;
+  font-style: italic;
+  color: #fce850;
+  text-align: right;
+}
+
+.ConversionButton button {
+  font-weight: 700;
+  font-size: 10px;
+  text-shadow: black;
+  border-radius: 10%;
+  color: #0091f2;
+  background-color: #ffb900;
+  margin-top: 5px;
+}

@@ -1,0 +1,14 @@
+.Credits {
+  font-size: 10px;
+  text-align: left;
+  color: #fff;
+}
+
+.Credits a {
+  text-decoration-line: none;
+  color: #fce850;
+}
+
+.Credits a:hover {
+  color: #ffb900;
+}

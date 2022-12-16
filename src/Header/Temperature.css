@@ -1,0 +1,10 @@
+.Temperature .current {
+  padding: 10px 0 5px;
+  min-width: fit-content;
+  font-size: 30px;
+}
+.Temperature .maxMin {
+  font-size: 15px;
+  font-style: italic;
+  line-height: 0.5cm;
+}

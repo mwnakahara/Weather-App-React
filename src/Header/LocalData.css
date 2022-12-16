@@ -1,0 +1,11 @@
+.LocalData {
+  margin: 25px auto;
+}
+
+.LocalData .city {
+  font-size: 30px;
+}
+
+.LocalData .date {
+  font-size: 17px;
+}

@@ -1,0 +1,17 @@
+.CitySearch div {
+  margin-right: 155px;
+  color: #fff;
+  font-style: italic;
+}
+
+.CitySearch input.searchBar {
+  background: #fff;
+}
+
+.CitySearch input.searchButton {
+  font-weight: 500;
+  text-shadow: black;
+  border-radius: 10%;
+  color: black;
+  background-color: #fce850;
+}

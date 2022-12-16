@@ -1,0 +1,9 @@
+.LocationButton .current-location {
+  font-weight: 700;
+  font-size: 10px;
+  text-shadow: black;
+  border-radius: 10%;
+  color: #0091f2;
+  background-color: #ffb900;
+  margin-top: 15px;
+}
