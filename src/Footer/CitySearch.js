@@ -4,13 +4,13 @@ import "./CitySearch.css";
 export default function CitySearch() {
   return (
     <div className="CitySearch">
-      <div>Search city:</div>
+      <p>Search city:</p>
       <form>
         <input
           className="searchBar"
           type="text"
           placeholder="Enter city"
-          autocomplete="off"
+          autoComplete="off"
         />
         <input className="searchButton" type="submit" value="Go" />
       </form>

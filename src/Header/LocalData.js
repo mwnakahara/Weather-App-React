@@ -4,8 +4,9 @@ import "./LocalData.css";
 export default function LocalData(props) {
   return (
     <div className="LocalData">
-      <div class="city">{props.city}</div>
-      <div class="date">{props.date}</div>
+      <div className="symbol-now">{props.symbol}</div>
+      <div className="city">{props.city}</div>
+      <div className="date">{props.date}</div>
     </div>
   );
 }

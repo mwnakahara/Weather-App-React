@@ -1,5 +1,9 @@
-.LocalData {
+.LocalData .symbol-now {
   margin: 25px auto;
+  font-size: 55px;
+  padding: 15px 10px 0;
+  min-width: fit-content;
+  color: whitesmoke;
 }
 
 .LocalData .city {

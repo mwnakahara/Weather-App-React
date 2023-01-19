@@ -1,7 +1,7 @@
-.CitySearch div {
-  margin-right: 155px;
+.CitySearch p {
   color: #fff;
   font-style: italic;
+  margin: 0 170px 0 0;
 }
 
 .CitySearch input.searchBar {

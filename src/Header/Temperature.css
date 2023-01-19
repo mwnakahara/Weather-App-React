@@ -1,5 +1,9 @@
+.Temperature {
+  margin: 25px auto;
+}
+
 .Temperature .current {
-  padding: 10px 0 5px;
+  padding: 10px 0 0;
   min-width: fit-content;
   font-size: 30px;
 }

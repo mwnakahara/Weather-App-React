@@ -9,6 +9,7 @@ export default function Temperature(props) {
         {props.current} {props.unit}
       </div>
       <div className="maxMin">
+        <div>max/ min</div>
         {props.maximum} {props.unit} <span>/ </span>
         {props.minimum} {props.unit}
       </div>
