@@ -1,10 +1,11 @@
 .AdditionalData {
   margin: 25px auto;
+  text-align: left;
 }
 
 .AdditionalData .description {
   text-transform: capitalize;
-  padding: 20px 0 15px;
+  padding: 30px 0 15px;
   font-size: 20px;
   font-weight: 600;
   font-style: normal;

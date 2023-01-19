@@ -5,22 +5,30 @@ import Temperature from "./Temperature";
 import AdditionalData from "./AdditionalData";
 import LocationButton from "./LocationButton";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div className="Header">
       <h1>Today's weather forecast</h1>
       <div className="row">
         <div className="col">
-          <Temperature current="7" maximum="9" minimum="5" unit="℃" />
+          <Temperature
+            current={props.weatherData.currentTemp}
+            feelTemp={props.weatherData.feelTemp}
+            unit="℃"
+          />
         </div>
         <div className="col">
-          <LocalData symbol="☁" city="Vancouver, CA" date="10/24" />
+          <LocalData
+            icon={props.weatherData.icon}
+            city={props.weatherData.city}
+            date={props.weatherData.date}
+          />
         </div>
         <div className="col">
           <AdditionalData
-            description="overcast clouds"
-            humidity="80%"
-            windSpeed="2.5 km/h"
+            description={props.weatherData.description}
+            humidity={props.weatherData.humidity}
+            windSpeed={props.weatherData.windSpeed}
           />
         </div>
       </div>

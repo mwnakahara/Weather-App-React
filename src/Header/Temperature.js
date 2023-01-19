@@ -6,12 +6,13 @@ export default function Temperature(props) {
     <div className="Temperature">
       <div className="current">
         {" "}
-        {props.current} {props.unit}
+        {props.current}
+        {props.unit}
       </div>
-      <div className="maxMin">
-        <div>max/ min</div>
-        {props.maximum} {props.unit} <span>/ </span>
-        {props.minimum} {props.unit}
+      <div className="feelTemp">
+        <div>feels like</div>
+        {props.feelTemp}
+        {props.unit}
       </div>
     </div>
   );

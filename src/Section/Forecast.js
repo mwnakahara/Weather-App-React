@@ -18,6 +18,7 @@ export default function Forecast(props) {
         {props.minimum}
         {props.unit}
       </div>
+      <div>{props.test}</div>
     </div>
   );
 }

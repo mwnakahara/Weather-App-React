@@ -1,7 +1,6 @@
-.LocalData .symbol-now {
-  margin: 25px auto;
+.LocalData .icon-now {
+  margin: 25px auto 5px;
   font-size: 55px;
-  padding: 15px 10px 0;
   min-width: fit-content;
   color: whitesmoke;
 }

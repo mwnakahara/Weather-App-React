@@ -1,14 +1,21 @@
 .Temperature {
   margin: 25px auto;
+  text-align: right;
 }
 
 .Temperature .current {
-  padding: 10px 0 0;
+  padding: 20px 0 5px;
   min-width: fit-content;
   font-size: 30px;
+  font-weight: 600;
 }
-.Temperature .maxMin {
-  font-size: 15px;
+
+.Temperature .feelTemp {
+  font-size: 20px;
   font-style: italic;
-  line-height: 0.5cm;
+  line-height: 0.55cm;
+}
+
+.Temperature .feelTemp div {
+  font-size: 15px;
 }

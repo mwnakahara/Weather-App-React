@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1,
+h2,
+footer,
+.additional-data,
+.temp-today,
+.mm-today,
+.mmTemp-today,
+.next-day,
+.next-mm-all,
+.next-mmTemp-all {
+  font-family: "Raleway", sans-serif;
+}

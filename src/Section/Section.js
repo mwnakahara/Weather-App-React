@@ -1,8 +1,9 @@
 import React from "react";
+import { propTypes } from "react-bootstrap/esm/Image";
 import Forecast from "./Forecast";
 import "./Section.css";
 
-export default function Section() {
+export default function Section(props) {
   return (
     <div className="Section">
       <h2>5-day weather forecast</h2>
@@ -30,7 +31,7 @@ export default function Section() {
           />
         </div>
         <div className="col">
-          <Forecast />
+          <Forecast test={props.forecastData.test} />
         </div>
         <div className="col">
           <Forecast />
