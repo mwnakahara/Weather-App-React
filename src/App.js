@@ -12,7 +12,6 @@ function App() {
   const [forecastData, setForecastData] = useState({});
 
   function handleResponseWeather(response) {
-   // console.log(response);
     setWeatherData({
       currentTemp: Math.round(response.data.temperature.current),
       feelTemp: Math.round(response.data.temperature.feels_like),
@@ -27,9 +26,9 @@ function App() {
   }
 
   function handleResponseForecast(response) {
-  //  console.log(response);
+    //  console.log(response);
     setForecastData({
-      test: "Test succesful",
+      test: "Test successful",
     });
   }
 
