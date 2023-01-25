@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./CitySearch.css";
 
-export default function CitySearch() {
-  let [city, setCity] = useState("defaultCity");
+export default function CitySearch(props) {
+  let [city, setCity] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
     console.log(city);
-    event.target.value = null;
+    props.updateCityValue(city);
   }
 
   function updateCity(event) {

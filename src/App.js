@@ -10,6 +10,7 @@ import Footer from "./Footer/Footer";
 function App() {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [forecastData, setForecastData] = useState({});
+  let [city, setCity] = useState("Vancouver");
 
   function handleResponseWeather(response) {
     setWeatherData({
@@ -34,9 +35,8 @@ function App() {
 
   let apiKey = "ddbtd8ao7c32a7441a0c22f296b0d389";
   let unit = "metric";
-  let defaultCity = "Vancouver";
-  let apiUrlWeather = `https://api.shecodes.io/weather/v1/current?query=${defaultCity}&key=${apiKey}&units=${unit}`;
-  let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${defaultCity}&key=${apiKey}&units=${unit}`;
+  let apiUrlWeather = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${unit}`;
+  let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=${unit}`;
 
   if (weatherData.ready) {
     return (
@@ -44,7 +44,7 @@ function App() {
         <div className="container">
           <Header weatherData={weatherData} />
           <Section forecastData={forecastData} />
-          <Footer />
+          <Footer updateCityValue={setCity} />
         </div>
       </div>
     );
