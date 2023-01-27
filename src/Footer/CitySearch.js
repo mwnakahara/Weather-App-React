@@ -6,8 +6,8 @@ export default function CitySearch(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(city);
     props.updateCityValue(city);
+    props.handleCity(city);
   }
 
   function updateCity(event) {

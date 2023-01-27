@@ -33,10 +33,15 @@ function App() {
     });
   }
 
-  let apiKey = "ddbtd8ao7c32a7441a0c22f296b0d389";
   let unit = "metric";
+  let apiKey = "ddbtd8ao7c32a7441a0c22f296b0d389";
   let apiUrlWeather = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${unit}`;
   let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=${unit}`;
+
+  function handleCity(city) {
+    let apiUrlWeather = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${unit}`;
+    axios.get(apiUrlWeather).then(handleResponseWeather);
+  }
 
   if (weatherData.ready) {
     return (
@@ -44,7 +49,7 @@ function App() {
         <div className="container">
           <Header weatherData={weatherData} />
           <Section forecastData={forecastData} />
-          <Footer updateCityValue={setCity} />
+          <Footer updateCityValue={setCity} handleCity={handleCity} />
         </div>
       </div>
     );

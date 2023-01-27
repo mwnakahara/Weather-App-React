@@ -14,7 +14,6 @@ export default function Header(props) {
           <Temperature
             current={props.weatherData.currentTemp}
             feelTemp={props.weatherData.feelTemp}
-            unit="℃"
           />
         </div>
         <div className="col">

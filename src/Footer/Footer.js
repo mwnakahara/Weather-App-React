@@ -7,7 +7,10 @@ import Credits from "./Credits";
 export default function Footer(props) {
   return (
     <div className="Footer">
-      <CitySearch updateCityValue={props.updateCityValue} />
+      <CitySearch
+        updateCityValue={props.updateCityValue}
+        handleCity={props.handleCity}
+      />
       <ConversionButton />
       <Credits />
     </div>
