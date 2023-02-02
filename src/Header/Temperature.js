@@ -2,46 +2,61 @@ import React, { useState } from "react";
 import "./Temperature.css";
 
 export default function Temperature(props) {
-  const [currentTemp, setcurrentTemp] = useState(props.current);
-  const [feelTemp, setFeelTemp] = useState(props.feelTemp);
-  const [unitSymbol, setUnitSymbol] = useState("℃");
+  const [unit, setUnit] = useState("celsius");
 
-  function handleClickCelsius(event) {
-    setcurrentTemp(props.current);
-    setFeelTemp(props.feelTemp);
-    setUnitSymbol("℃");
+  function showCelsius(event) {
+    event.preventDefault();
+    setUnit("celsius");
   }
 
-  function handleClickFahrenheit(event) {
-    setcurrentTemp(Math.round((props.current * 9) / 5 + 32));
-    setFeelTemp(Math.round((props.feelTemp * 9) / 5 + 32));
-    setUnitSymbol("℉");
+  function showFahrenheit(event) {
+    event.preventDefault();
+    setUnit("fahrenheit");
   }
 
-  return (
-    <div className="Temperature">
-      <div className="current">
-        {" "}
-        {currentTemp}
-        {unitSymbol}
-      </div>
-      <div className="feelTemp">
-        <div>feels like</div>
-        {feelTemp}
-        {unitSymbol}
-      </div>
-      <div className="ConversionButton">
-        <div>
-          display in:
-          <br />
-          <button type="button" onClick={handleClickCelsius}>
-            Celsius
-          </button>{" "}
-          <button type="button" onClick={handleClickFahrenheit}>
-            Fahrenheit
-          </button>
+  function fahrenheit(value) {
+    return Math.round((value * 9) / 5 + 32);
+  }
+
+  if (unit === "celsius") {
+    return (
+      <div className="Temperature">
+        <div className="temp col">
+          <div className="current">
+            {props.current}
+            <span className="units">
+              ℃ |{" "}
+              <a href="/" onClick={showFahrenheit}>
+                ℉
+              </a>
+            </span>
+          </div>
+          <div className="feelTemp">
+            <div>feels like</div>
+            {props.feelTemp}°
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className="Temperature">
+        <div className="temp col">
+          <div className="current">
+            {fahrenheit(props.current)}
+            <span className="units">
+              <a href="/" onclick={showCelsius}>
+                ℃
+              </a>{" "}
+              | ℉
+            </span>
+          </div>
+          <div className="feelTemp">
+            <div>feels like</div>
+            {fahrenheit(props.feelTemp)}°
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
