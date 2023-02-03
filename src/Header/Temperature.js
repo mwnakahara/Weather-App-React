@@ -45,7 +45,7 @@ export default function Temperature(props) {
           <div className="current">
             {fahrenheit(props.current)}
             <span className="units">
-              <a href="/" onclick={showCelsius}>
+              <a href="/" onClick={showCelsius}>
                 ℃
               </a>{" "}
               | ℉
