@@ -12,8 +12,17 @@
   color: whitesmoke;
 }
 
+.Forecast .forecast-description {
+  text-transform: capitalize;
+}
+
 .Forecast .temperatures {
   font-style: italic;
   font-size: 15px;
   margin-top: 5px;
+  line-height: 1.5;
+}
+
+.Forecast .temperatures .fahrenheit {
+  opacity: 50%;
 }

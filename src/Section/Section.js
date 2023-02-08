@@ -8,37 +8,15 @@ export default function Section(props) {
     <div className="Section">
       <h2>5-day weather forecast</h2>
       <div className="row">
-        <div className="col">
-          <Forecast
-            weekday="Tuesday"
-            date="10/25"
-            icon="☀"
-            description="sunny"
-            maximum="10"
-            minimum="7"
-            unit="℃"
-          />
-        </div>
-        <div className="col">
-          <Forecast
-            weekday="Wednesday"
-            date="10/26"
-            icon="🌧"
-            description="rainy"
-            maximum="11"
-            minimum="8"
-            unit="℃"
-          />
-        </div>
-        <div className="col">
-          <Forecast test={props.forecastData.test} />
-        </div>
-        <div className="col">
-          <Forecast />
-        </div>
-        <div className="col">
-          <Forecast />
-        </div>
+        {props.forecastData.map(function (dailyForecast, index) {
+          if (index >= 1 && index <= 5) {
+            return (
+              <div className="col" key={index}>
+                <Forecast forecastData={dailyForecast} />
+              </div>
+            );
+          } else return null;
+        })}
       </div>
     </div>
   );

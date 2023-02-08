@@ -27,10 +27,7 @@ function App() {
   }
 
   function handleResponseForecast(response) {
-    //  console.log(response);
-    setForecastData({
-      test: "Test successful",
-    });
+    setForecastData(response.data.daily);
   }
 
   let unit = "metric";
@@ -40,7 +37,9 @@ function App() {
 
   function handleCity(city) {
     let apiUrlWeather = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${unit}`;
+    let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=${unit}`;
     axios.get(apiUrlWeather).then(handleResponseWeather);
+    axios.get(apiUrlForecast).then(handleResponseForecast);
   }
 
   if (weatherData.ready) {

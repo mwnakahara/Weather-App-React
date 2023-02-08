@@ -9,7 +9,6 @@ export default function LocalData(props) {
     <div className="LocalData">
       <div className="icon-now">
         <img src={iconUrl} alt={props.description} />
-        {props.symbol}
       </div>
       <div className="city">{props.city}</div>
       <div className="date">

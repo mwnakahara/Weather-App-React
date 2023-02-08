@@ -22,6 +22,9 @@ export default function CurrentDate(props) {
     month = `0${month}`;
   }
   let date = timeData.getDate();
+  if (date < 10) {
+    date = `0${date}`;
+  }
 
   let hours = timeData.getHours();
   if (hours < 10) {
