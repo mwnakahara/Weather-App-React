@@ -9,6 +9,16 @@ have child component update state, but state definition e.g. city in parent comp
 --> https://stackoverflow.com/questions/41619166/react-can-a-child-component-send-value-back-to-parent-form
 --> https://reactjs.org/docs/lifting-state-up.html
 
-unit conversion: either callback function with state "unit" or restructure app (?)
-
 components in ReactJS should be created based on functionality, not layout! (otherwise there'll be trouble with functionality later on / it gets too compliated)
+
+useEffect (() => {
+effect
+return () => {
+cleanup
+}
+}, [input])
+
+e.g.
+useEffect (() => {
+setUnit(celsius)},
+[unitValue])
