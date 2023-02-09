@@ -26,3 +26,12 @@
 .Forecast .temperatures .fahrenheit {
   opacity: 50%;
 }
+
+@media (max-width: 850px) {
+  .Forecast {
+    margin: 15px auto;
+    padding: 10px 2px;
+    border: 1px solid #ffb900;
+    border-radius: 5%;
+  }
+}

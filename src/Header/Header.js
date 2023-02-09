@@ -10,20 +10,20 @@ export default function Header(props) {
     <div className="Header">
       <h1>Today's weather forecast</h1>
       <div className="row">
-        <div className="col">
+        <div className="col-md">
           <Temperature
             current={props.weatherData.currentTemp}
             feelTemp={props.weatherData.feelTemp}
           />
         </div>
-        <div className="col">
+        <div className="col-md">
           <LocalData
             icon={props.weatherData.icon}
             city={props.weatherData.city}
             date={props.weatherData.date}
           />
         </div>
-        <div className="col">
+        <div className="col-md">
           <AdditionalData
             description={props.weatherData.description}
             humidity={props.weatherData.humidity}

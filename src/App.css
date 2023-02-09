@@ -10,3 +10,21 @@
   text-align: center;
   margin: 200px auto;
 }
+
+@media (max-width: 650px) {
+  .App {
+    margin: 10px 50px;
+  }
+}
+
+@media (max-width: 515px) {
+  .App {
+    margin: 10px 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .App {
+    margin: 5px;
+  }
+}

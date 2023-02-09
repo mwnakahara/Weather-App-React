@@ -15,3 +15,34 @@
   color: black;
   background-color: #fce850;
 }
+
+@media (max-width: 515px) {
+  .CitySearch p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .CitySearch input.searchBar {
+    width: 175px;
+    text-align: center;
+  }
+
+  .CitySearch input.searchButton {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 410px) {
+  .CitySearch input.searchBar {
+    width: 125px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .CitySearch input.searchBar {
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+  }
+}

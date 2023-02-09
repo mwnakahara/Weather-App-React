@@ -22,3 +22,27 @@
   line-height: 0.5cm;
   font-style: italic;
 }
+
+@media (max-width: 850px) {
+  .AdditionalData {
+    text-align: center;
+    border-radius: 10px;
+    border-top: 1px solid #ffb900;
+    border-bottom: 1px solid #ffb900;
+    padding: 15px;
+    margin: 35px 5 5px;
+  }
+  .AdditionalData .description {
+    padding: 0 0 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .AdditionalData .description {
+    font-size: 17px;
+  }
+
+  .AdditionalData li {
+    font-size: 13px;
+  }
+}

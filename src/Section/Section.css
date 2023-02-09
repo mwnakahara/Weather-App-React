@@ -6,5 +6,18 @@
 .Section h2 {
   text-decoration: underline;
   padding-bottom: 15px;
+  opacity: 75%;
   font-size: 32px;
+}
+
+@media (max-width: 850px) {
+  .Section h2 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 410px) {
+  .Section h2 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
 }

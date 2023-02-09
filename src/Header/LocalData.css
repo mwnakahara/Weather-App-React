@@ -1,7 +1,6 @@
 .LocalData .icon-now {
   margin: 25px auto 5px;
   font-size: 55px;
-  min-width: fit-content;
   color: whitesmoke;
 }
 
@@ -12,4 +11,40 @@
 .LocalData .date {
   font-size: 17px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 850px) {
+  .LocalData .icon-now {
+    margin: 0 auto;
+  }
+  .LocalData .city {
+    font-size: 30px;
+  }
+  .LocalData .date {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .LocalData .icon-now {
+    height: 75px;
+  }
+}
+
+@media (max-width: 410px) {
+  .LocalData .city {
+    font-size: 25px;
+  }
+  .LocalData .date {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .LocalData .city {
+    font-size: 20px;
+  }
+  .LocalData .date {
+    font-size: 13px;
+  }
 }

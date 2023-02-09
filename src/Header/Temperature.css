@@ -1,5 +1,5 @@
 .Temperature {
-  margin: 25px auto;
+  margin: 25px 0;
   text-align: right;
 }
 
@@ -32,4 +32,67 @@
   font-size: 20px;
   position: relative;
   top: -1px;
+}
+
+@media (max-width: 850px) {
+  .Temperature {
+    text-align: center;
+    border-radius: 10px;
+    border-top: 1px solid #ffb900;
+    border-bottom: 1px solid #ffb900;
+    padding: 15px;
+  }
+  .Temperature .current {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .Temperature {
+    margin: 5px;
+  }
+  .Temperature .current {
+    font-size: 25px;
+  }
+  .Temperature .feelTemp {
+    font-size: 20px;
+  }
+
+  .Temperature .feelTemp div {
+    font-size: 15px;
+  }
+  .Temperature .units a {
+    font-size: 18px;
+    position: relative;
+    top: -5px;
+  }
+
+  .Temperature .units a:active {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360) {
+  .Temperature {
+    margin: 5px;
+  }
+  .Temperature .current {
+    font-size: 20px;
+  }
+  .Temperature .feelTemp {
+    font-size: 15px;
+  }
+
+  .Temperature .feelTemp div {
+    font-size: 13px;
+  }
+  .Temperature .units a {
+    font-size: 17px;
+    position: relative;
+    top: -5px;
+  }
+
+  .Temperature .units a:active {
+    font-size: 13px;
+  }
 }
