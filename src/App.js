@@ -46,8 +46,6 @@ function App() {
     return (
       <div className="App">
         <div className="container">
-          ~ If this page is blank, please refresh the page until content
-          appears. ~
           <Header weatherData={weatherData} />
           <Section forecastData={forecastData} />
           <Footer updateCityValue={setCity} handleCity={handleCity} />
