@@ -9,7 +9,7 @@ import Footer from "./Footer/Footer";
 
 function App() {
   const [weatherData, setWeatherData] = useState({ ready: false });
-  const [forecastData, setForecastData] = useState({});
+  const [forecastData, setForecastData] = useState(false);
   const [city, setCity] = useState("Vancouver");
 
   function handleResponseWeather(response) {
